@@ -4,13 +4,14 @@ import lombok.Getter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;
 
+import java.util.List;
+
 @Document
 @Getter
 public class Order {
     @Id
     private String id;
-    private String name;
-    private Integer quantity;
-    private Double cost;
+    private String customerName;
+    private List<OrderItem> items;
 
 }
