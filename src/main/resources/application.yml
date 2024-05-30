@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: mongock
+  couchbase:
+    connection-string: localhost
+    username: orders
+    password: password
+    bucket-name : orders
+
+mongock:
+  enabled: true
+  index-creation: true
+  migration-scan-package: com.tw.mongock.migration
